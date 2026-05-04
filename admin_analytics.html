@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Admin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="admin_analytics.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+<div class="mobile-container">
+    <div class="header-orange"><a href="admin_dashboard.html" class="back-btn"><i class="fa-solid fa-chevron-left"></i></a><h2 style="margin:0;font-size:18px;">Analytics</h2></div>
+    <div class="content">
+        <div class="match-card">
+            <div class="match-pct" id="matchPct"></div>
+            <div class="match-label">อัตราความสำเร็จในการจับคู่</div>
+            <div style="font-size:11px;opacity:0.85;margin-top:8px;" id="matchTotal"></div>
+        </div>
+        <div class="section-card"><h4><i class="fa-solid fa-book"></i> วิชายอดนิยม</h4><div id="subjectList"></div></div>
+    </div>
+    <div class="bottom-nav">
+        <a href="admin_dashboard.html"><i class="fa-solid fa-home"></i></a>
+        <a href="admin_users.html"><i class="fa-solid fa-users"></i></a>
+        <a href="admin_analytics.html" class="active"><i class="fa-solid fa-chart-bar"></i></a>
+        <a href="admin_activity.html"><i class="fa-solid fa-bell"></i></a>
+    </div>
+</div>
+<script src="_safe_storage.js"></script>
+<script src="Analytics.js"></script>
+<script src="admin_analytics.js"></script>
+</body>
+</html>
